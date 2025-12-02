@@ -1,0 +1,28 @@
+/*  Naam: Thomas Stappers
+*/
+
+* { box-sizing: border-box; }
+
+html {width: 100%; ; inset-block: 0 0; margin-left: 5%; margin-right: 5%; font: 24px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+h1 {font: bold 32px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.toppic { float: right ; position: absolute; top: 0 ; right: 0 ; padding-right: 5%}
+.content {margin-bottom: 20px}
+.clear {margin-bottom: 9%}
+.button {color: blue}
+textarea {block-size: 300px; inline-size: max(50%)}
+.textline ,.slider {position: absolute ;left:360px; inline-size: max(35%)}
+.block  {float-wrap: wrap; }
+.block , .textline {position:static; white-space:pre-wrap; inline-size: max(35%) }
+.submit_button {
+        background: white;
+        border: black solid 1px;
+        padding: 12px 30px;
+        cursor: pointer;
+        font-size: 20px;
+        width: 80%;
+}
+.submit_button:hover {background: #efefef; border: black solid 1px;}
+
+
+/*oke das goed genoeg*/
