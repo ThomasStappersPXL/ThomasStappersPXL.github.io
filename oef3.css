@@ -3,26 +3,69 @@
 
 * { box-sizing: border-box; }
 
-html {width: 100%; ; inset-block: 0 0; margin-left: 5%; margin-right: 5%; font: 24px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; }
+html { margin-left: 10%; margin-right: 15%; font: 24px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-h1 {font: bold 32px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; }
-.toppic { float: right ; position: absolute; top: 0 ; right: 0 ; padding-right: 5%}
-.content {margin-bottom: 20px}
-.clear {margin-bottom: 9%}
-.button {color: blue}
-textarea {block-size: 300px; inline-size: max(50%)}
-.textline ,.slider {position: absolute ;left:360px; inline-size: max(35%)}
-.block  {float-wrap: wrap; }
-.block , .textline {position:static; white-space:pre-wrap; inline-size: max(35%) }
-.submit_button {
-        background: white;
-        border: black solid 1px;
-        padding: 12px 30px;
-        cursor: pointer;
-        font-size: 20px;
-        width: 80%;
+
+b {
+    padding-right: 15px;
+    padding-left: 5px;
 }
-.submit_button:hover {background: #efefef; border: black solid 1px;}
+
+label {
+    padding-right: 35px;
+}
+
+#stars {
+    justify-content: flex-start;
+    padding: 14px 0 0 0;
+
+}
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0 0 1% 0;
+
+}
+.fulltextline {
+    inline-size: max(90%);
+
+}
+.slider {
+    inline-size: max(80%)
+}
+
+h1 {
+    font: bold 32px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.content {
+    margin-bottom: 20px;
+    inset-inline-end: 100%;
+}
+
+.button {
+    color: blue
+}
+textarea {
+    block-size: 300px;
+    inline-size: max(100%);
+    margin-top: 20px;
+}
+.textline {
+    inline-size: max(35%);
+
+}
+.submit_button {
+    background: white;
+    border: black solid 1px;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+}
+.submit_button:hover {
+    background: #efefef;
+    border: black solid 1px;
+}
 
 
-/*oke das goed genoeg*/

@@ -3,73 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <title>Oef3</title>
-    <link href="./oef3.css" rel="stylesheet">
+    <link href="css/oef3.css" rel="stylesheet">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta charset="utf-8">
 </head>
 <body>
+<div class="container">
     <h1>
         Spel-sessie Wingspan
     </h1>
-    <img class="toppic" src="./1.jpeg" alt="Foto van het bordspel Wingspan">
+    <img class="toppic" src="images/1.jpeg" alt="Foto van het bordspel Wingspan">
+</div>
 
-    <br class="clear">
-    <form action="verwerk/verwerk.html" method="GET">
-        <span class="content">
+
+<form action="verwerk.html" method="GET">
+        <span class="content container">
             <b>
                 Datum:
             </b>
-            <input type="date" name="datum" id="datum" class="textline" required>
+            <input type="date" name="datum" id="datum" class="fulltextline" required>
         </span>
-        <br>
-        <span class="content">
-           <span class="block"></span>
+
+    <span class="content container">
+
             <b>
                 Start:
             </b>
             <input type="number" min="0" max="23" name="start" id="start"  class="textline" required>
 
-        <span class="block"></span>
+
             <b>
                 Tijdsduur:
             </b>
             <input type="number" min="1" max="11"  name="duration" id="duration" class="textline" required>
 
         </span>
-        <br>
-        <span class="content">
-            <b>
+
+    <span class="content container">
+            <b class="label">
                 Email:
             </b>
-            <input type="email" name="email" id="email" class="textline" required>
+            <input type="email" name="email" id="email" class="fulltextline" required>
         </span>
-        <br>
 
 
-        <span class="content">
+
+    <span class="content container">
             <b>
                 Complexiteit:
             </b>
             <input type="range" name="complexiteit" min="0" max="10" step="1" value="1" class="slider">
         </span>
-        <br>
-        <span class="content">
+
+    <span class="content container">
             <b>
                 Geluk:
             </b>
             <input type="range" name="geluk" min="0" max="10" step="1" value="1" class="slider">
 
         </span>
-        <br>
-        <span class="content">
+
+    <span class="content container">
             <b>
                 Strategie:
             </b>
             <input type="range" name="strategie" min="0" max="10" step="1" value="1" class="slider">
         </span>
-        <br>
 
-        <span class="content">
+
+    <span class="content">
             <b>
                 Beschrijving:
             </b>
@@ -77,27 +79,27 @@
             <textarea name="beschrijving"></textarea>
 
         </span>
-        <br>
-        <span class="content">
+    <br>
+    <span class="container" id="stars">
             <b>
                 Aantal sterren:
             </b>
-            <input type="radio" name="sterren" value="1" class="sterren" id="1ster"> <label for="1ster">&star;</label>
-            <input type="radio" name="sterren" value="2" class="sterren" id="2ster"> <label for="2ster">&star;&star;</label>
-            <input type="radio" name="sterren" value="3" class="sterren" id="3ster"> <label for="3ster">&star;&star;&star;</label>
-            <input type="radio" name="sterren" value="4" class="sterren" id="4ster"> <label for="4ster">&star;&star;&star;&star;</label>
-            <input type="radio" name="sterren" value="5" class="sterren" id="5ster"> <label for="5ster">&star;&star;&star;&star;&star;</label>
+            <span><input type="radio" name="sterren" value="1" class="sterren" id="1ster"> <label for="1ster">&star;</label></span>
+            <span><input type="radio" name="sterren" value="2" class="sterren" id="2ster"> <label for="2ster">&star;&star;</label></span>
+            <span><input type="radio" name="sterren" value="3" class="sterren" id="3ster"> <label for="3ster">&star;&star;&star;</label></span>
+            <span><input type="radio" name="sterren" value="4" class="sterren" id="4ster"> <label for="4ster">&star;&star;&star;&star;</label></span>
+
 
         </span>
-        <br>
+    <br>
 
-            <button class="submit_button"  type="submit">Bewaar</button>
-
-
+    <button class="submit_button"  type="submit">Bewaar</button>
 
 
 
-    </form>
+
+
+</form>
 
 
 
